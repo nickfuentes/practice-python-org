@@ -40,7 +40,7 @@ def num_check():
     user_num = int(input("Enter a number: "))
 
     for num in range(0, len(array), 1):
-        if user_num < array[num]:
+        if user_num > array[num]:
             print(array[num])
 
 
