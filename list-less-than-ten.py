@@ -34,6 +34,7 @@ print(new_array)
 print_new_array()"""
 
 array = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+new_array = []
 
 
 def num_check():
@@ -41,7 +42,8 @@ def num_check():
 
     for num in range(0, len(array), 1):
         if user_num > array[num]:
-            print(array[num])
+            new_array.append(array[num])
 
 
 num_check()
+print(new_array)
